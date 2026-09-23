@@ -39,7 +39,22 @@
 ### Step 12: 
   Stop
 # Program:
+```
+printf("Start: x=%d y=%d\n\n", x, y);
+
+valueSwap(x, y);
+printf("After valueSwap: x=%d y=%d\n\n", x, y);
+
+refSwap(&x, &y);
+printf("After refSwap: x=%d y=%d\n", x, y);
+
+return 0;
+```
 # Output:
+
+
+<img width="256" height="261" alt="image" src="https://github.com/user-attachments/assets/760a5d77-ef64-46e5-9a3f-27917f023651" />
+
 # Result: 
   Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -77,7 +92,25 @@
 ### Step 10:
   Stop
 # Program:
+
+```
+printf("How many Fibonacci numbers? ");
+scanf("%d", &n);
+
+printf("First %d Fibonacci numbers:\n", n);
+
+for(i = 0; i < n; i++) {
+    printf("%d ", fib(i));
+}
+
+printf("\n");
+
+return 0;
+```
 # Output:
+
+<img width="308" height="179" alt="image" src="https://github.com/user-attachments/assets/4dc7b4dc-f83f-44ad-8e75-18cc427618fb" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -119,7 +152,44 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 12:
   Stop
 # Program:
+
+```
+printf("%d ", start);
+
+printNumbers(start + 2, end);
+```
+
+```
+
+printf("Enter starting number: ");
+scanf("%d", &start);
+
+printf("Enter ending number: ");
+scanf("%d", &end);
+
+if(start % 2 == 0) {
+    printf("\nEven numbers from %d to %d:\n", start, end);
+    if(start % 2 != 0) {
+        start = start + 1;
+    }
+}
+else {
+    printf("\nOdd numbers from %d to %d:\n", start, end);
+    if(start % 2 == 0) {
+        start = start + 1;
+    }
+}
+
+printNumbers(start, end);
+
+printf("\n");
+
+return 0;
+```
 # Output:
+
+<img width="295" height="236" alt="image" src="https://github.com/user-attachments/assets/e316dc70-c3a1-4bf4-a42d-70cc052521df" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -161,7 +231,38 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 11:
   Stop
 # Program:
+```
+
+printf("Enter number of elements: ");
+scanf("%d", &n);
+
+arr = (int*)calloc(n, sizeof(int));
+
+if(arr == NULL) {
+    printf("Memory allocation failed!\n");
+    return 1;
+}
+
+printf("Enter %d elements: ", n);
+for(int i = 0; i < n; i++) {
+    scanf("%d", &arr[i]);
+    sum += arr[i];
+}
+
+printf("Sum: %d\n", sum);
+
+free(arr);
+
+return 0;
+
+```
+
 # Output:
+
+
+
+<img width="254" height="205" alt="image" src="https://github.com/user-attachments/assets/3070578c-4f08-42b5-808b-cbad0f6c689d" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -197,6 +298,23 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 10:
   Stop
 # Program:
+
+```
+int a[n];
+
+for(int i = 0; i < n; i++) {
+    scanf("%d", &a[i]);
+}
+
+printArray(a, n);
+
+return 0;
+
+```
 # Output:
+
+
+<img width="246" height="80" alt="image" src="https://github.com/user-attachments/assets/f5e1c40c-2a77-4e86-8142-27e2d233f859" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
